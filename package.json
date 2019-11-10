@@ -1,0 +1,28 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Full stack compatability-based friend finder app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mkkiyoi/FriendFinder.git"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "Matthew Kiyoi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mkkiyoi/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/Mkkiyoi/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
