@@ -2,6 +2,7 @@
 const express = require('express');
 const path = require('path');
 const htmlRoutes = require('./app/routing/htmlRoutes');
+const apiRoutes = require('./app/routing/apiRoutes');
 
 // Construct Express App
 let app = express();
@@ -14,6 +15,8 @@ app.use(express.json());
 htmlRoutes.displaySurvey(app, path);
 htmlRoutes.displayHome(app, path);
 
+apiRoutes.getFriends(app);
+apiRoutes.addFriend(app);
 
 // Server listening
 app.listen(PORT, () => {
