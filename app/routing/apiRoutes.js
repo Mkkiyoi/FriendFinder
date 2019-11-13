@@ -1,25 +1,18 @@
-// Import Node dependencies
-const fs = require('fs');
+let friends = require('../data/friends');
 
 // GET route to /api/friends
 let getFriends = (app) => {
     app.get('/api/friends', (request, result) => {
-        fs.readFile('../data/friends.js', (error, data) => {
-            if (error) throw error;
-            let friends = JSON.parse(data);
-            return result.json(friends);
-        });
+        result.json(friends);
     });
 }
 
 
-// POST route to /api/friends
+// POST route to /api/fri;ends
 let addFriend = (app) => {
     app.post('/api/friends', (request, result) => {
-        let newFriend = req.body;
-        fs.appendFile('../data/friends.js', newFriend, (error) => {
-            if (error) throw error;
-        });
+        console.log(result)
+        result.send(request.body);
     });
 }
 
