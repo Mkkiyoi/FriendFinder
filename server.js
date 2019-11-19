@@ -6,11 +6,12 @@ const apiRoutes = require('./app/routing/apiRoutes');
 
 // Construct Express App
 let app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 // Express app data parsing
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '/app/public')));
 
 htmlRoutes.displaySurvey(app, path);
 htmlRoutes.displayHome(app, path);
