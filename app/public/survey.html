@@ -22,19 +22,20 @@
                 <h1>Compatability Survey!</h1>
                 <hr>
                 <form>
-                    <div class="form-group">
+                    <div class="form-group" id="name-group">
                         <label for="name">Name (Required)</label>
-                        <input type="name" class="form-control" id="name" placeholder="Enter your name." value="Bob">
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name.">
                     </div>
-                    <div class="form-group">
-                        <label for="imageURL">Link to a Photo Image ((Required))</label>
-                        <input type="text" class="form-control" id="imageURL" placeholder="" value="google.com">
+                    <div class="form-group" id="photo-group">
+                        <label for="imageURL">Link to a Photo Image (Required)</label>
+                        <input type="text" class="form-control" id="imageURL">
                     </div>
+                    <div id="survey-group"></div>
                     <h3>Question 1</h3>
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">  Strongly Disagree  </label>
-                            <input class="form-check-input" type="radio" name="questionOptions1" value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions1" value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions1" value="2">
@@ -54,7 +55,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions2"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions2"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions2" value="2">
@@ -74,7 +75,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions3"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions3"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions3" value="2">
@@ -94,7 +95,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions4"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions4"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions4" value="2">
@@ -114,7 +115,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions5"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions5"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions5" value="2">
@@ -134,7 +135,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions6"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions6"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions6" value="2">
@@ -154,7 +155,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions7"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions7"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions7" value="2">
@@ -174,7 +175,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions8"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions8"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions8" value="2">
@@ -194,7 +195,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions9"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions9"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions9" value="2">
@@ -214,7 +215,7 @@
                     <div class="form-group">
                         <div class="form-check form-check-inline">
                             <label class="form-check-label mr-2">Strongly Disagree</label>
-                            <input class="form-check-input" type="radio" name="questionOptions10"  value="1" checked>
+                            <input class="form-check-input" type="radio" name="questionOptions10"  value="1">
                         </div>
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="questionOptions10" value="2">
@@ -230,7 +231,7 @@
                             <label class="form-check-label mr-2">Strongly Agree</label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    <button class="btn btn-primary" id="submit">Submit</button>
                 </form>
             </div>
         </div>
